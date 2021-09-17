@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <bottom>
+      <Button fx:id="mainButton" mnemonicParsing="false" onAction="#onAction" text="Button" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <VBox alignment="CENTER" fillWidth="false" maxWidth="-Infinity" minWidth="100.0" prefHeight="200.0" prefWidth="300.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="nasobek" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label text="Zadejte číslo, které chcete násobit" />
+            <TextField fx:id="TxtField" prefHeight="25.0" prefWidth="593.0" />
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Button fx:id="resetButton" mnemonicParsing="false" onAction="#ResetAction" text="Reset" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>
